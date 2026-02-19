@@ -35,9 +35,7 @@ LTF_TIMEFRAME = 'M5'  # Entry timeframe
 MIN_RR_RATIO = 2.0    # Higher RR for scalping
 
 # 1. LOGIN TO MT5
-account = 5889667
-mt5.initialize("C:/Program Files/MetaTrader 5 Terminal/terminal64.exe")
-authorized = mt5.login(account, password=";lkPOI098", server="Deriv-Demo") 
+
 
 if authorized:
     print("Connected: Connecting to MT5 Client")
@@ -1518,4 +1516,5 @@ def main_trading_loop():
 
 
 if __name__ == "__main__":
+
     main_trading_loop()
